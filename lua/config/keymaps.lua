@@ -19,6 +19,9 @@ map("n", "U", "<C-r>", { desc = "Redo" })
 -- Select all
 map("n", "<C-a>", "ggVG", { desc = "Select all" })
 
+-- Terminal
+map("n", "<C-;>", "<cmd>ToggleTerm<cr>", { desc = "Toggle terminal" })
+
 -- debug using functions keys, using same layout as vscode or goland
 map("n", "<F1>", "<cmd>lua require'dapui'.toggle()<cr>", { desc = "DAP: Toggle UI" })
 map("n", "<F2>", "<cmd>lua require'dap'.toggle_breakpoint()<cr>", { desc = "DAP: Toggle Breakpoint" })
